@@ -13,6 +13,12 @@ This subgraph dynamically tracks any pair created by the QuickSwap factory. It t
 ## Running Locally
 
 Make sure to update package.json settings to point to your own graph account.
+```bash
+cargo run -p graph-node --release -- \
+  --postgres-url postgresql://postgres:postgres@localhost:5432/graph-node \
+  --ethereum-rpc matic:https://rpc-mainnet.matic.quiknode.pro \
+  --ipfs 127.0.0.1:5001
+```
 
 ## Key Entity Overviews
 
